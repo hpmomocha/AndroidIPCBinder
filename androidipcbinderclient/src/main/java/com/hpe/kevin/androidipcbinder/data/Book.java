@@ -1,4 +1,4 @@
-package com.hpe.kevin.androidipcbinder;
+package com.hpe.kevin.androidipcbinder.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;

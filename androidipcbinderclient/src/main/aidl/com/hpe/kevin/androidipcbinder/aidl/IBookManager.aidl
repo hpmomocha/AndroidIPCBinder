@@ -1,8 +1,8 @@
 // IBookManager.aidl
-package com.hpe.kevin.androidipcbinder;
+package com.hpe.kevin.androidipcbinder.aidl;
 
 // Declare any non-default types here with import statements
-import com.hpe.kevin.androidipcbinder.Book;
+import com.hpe.kevin.androidipcbinder.data.Book;
 
 interface IBookManager {
     List<Book> getBookList();

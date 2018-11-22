@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hpe.kevin.androidipcbinder">
+    package="com.hpe.kevin.androidipcbinderclient">
 
-    <permission android:name="com.hpe.kevin.androidipcbinder.service.AIDL_SERVICE" android:protectionLevel="normal" />
+    <uses-permission android:name="com.hpe.kevin.androidipcbinder.service.AIDL_SERVICE"/>
 
     <application
         android:allowBackup="true"
@@ -21,16 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service
-            android:name=".service.BookManagerService"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.hpe.kevin.androidipcbinder.service.AIDL_SERVICE"/>
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </service>
     </application>
 
 </manifest>
