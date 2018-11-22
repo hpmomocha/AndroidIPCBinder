@@ -1,0 +1,8 @@
+def butterKnifeVersion = "8.5.1"
+
+project.ext {
+    dependencies = [
+            "butterknife"                 : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            "butterknife-compiler"        : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}"
+            ]
+}
